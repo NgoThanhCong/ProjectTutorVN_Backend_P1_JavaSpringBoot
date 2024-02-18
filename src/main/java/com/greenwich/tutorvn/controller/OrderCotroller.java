@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@RestController  // khai bao anotation restcontroller de tao ra 1 class Rest API
+@RestController  // khai bao anotation restcontroller de tao ra 1 class Rest API.
 @RequestMapping(path  = "/api/course")  // *tao ra URL cos dang /api/
 @CrossOrigin(origins = "http://localhost:3000,http://localhost:3002", maxAge = 3600)
 public class OrderCotroller {
