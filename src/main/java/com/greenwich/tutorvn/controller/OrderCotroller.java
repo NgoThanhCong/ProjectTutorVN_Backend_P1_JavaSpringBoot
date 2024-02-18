@@ -30,11 +30,11 @@ public class OrderCotroller {
 
     @Autowired
     SequenceGeneratorService sequenceGeneratorService;
-    @GetMapping("")  // *gui yeu cau de lay du lieu
-    ResponseEntity<ResponseObject> getListOrder(@RequestParam int pageNum, @RequestParam int pageSize)
-    {
+    @GetMapping("")
+        // *gui yeu cau de lay du lieu hhhththt
+    ResponseEntity<ResponseObject> getListOrder(@RequestParam int pageNum, @RequestParam int pageSize) {
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject(200,
-                "Success",orderService.getOrderpage(pageNum, pageSize)) );
+                "Success", orderService.getOrderpage(pageNum, pageSize)));
     }
 
     @GetMapping("/paging")                // *phân trang
