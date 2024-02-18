@@ -112,7 +112,7 @@ public class Database {
 //                User user = userRepository.findById(1l).get();
 //                user.setPassWord(encoder.encode("abcd1234"));
 //                userRepository.save(user);
-
+//hìdfds
                 if(userRepository.findAll().size()==0){
                     User admin = new User();
                     admin.setId(1l);
