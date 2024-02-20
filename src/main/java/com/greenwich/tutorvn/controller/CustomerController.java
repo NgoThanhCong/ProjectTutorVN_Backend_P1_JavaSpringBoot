@@ -28,7 +28,7 @@ public class CustomerController
     @PostMapping("/insert")
     ResponseEntity<ResponseObject> insert ( @Valid @RequestBody Customer customer)
     {
-//test 1
+//test 123
         Optional<Customer> optionalCustomer = customerRepository.findByPhone(customer.getPhone());
         if(optionalCustomer.isPresent()) {
             return ResponseEntity.status(HttpStatus.OK).body(new
